@@ -1,0 +1,43 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[spanish]{babel} 
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{biblatex}
+\usepackage{titlesec}
+\usepackage{setspace}
+
+\lfoot{Template for TEC Projects}
+\rfoot{\copyright{} iZack_26}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% -------> Arial Format
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\titleformat*{\section}{\fontsize{16}{19.2}\bfseries\sffamily}
+\titleformat*{\subsection}{\fontsize{14}{16.8}\bfseries\sffamily}
+\titleformat*{\subsubsection}{\fontsize{12}{14.4}\bfseries\sffamily} 
+
+% -----> Espaciado entre lineas
+\renewcommand{\baselinestretch}{1.5} 
+
+
+%-----> Justifications of the Document
+\usepackage{ragged2e} 
+\justifying
+
+\makeatletter
+\def\HUGE{\@setfontsize\HUGE{30}{60}}
+\setlength{\parskip}{0.1in}
+
+\newcommand{\myTitle}{Title}
+
+\begin{document}
+\include{TitlePage}
+\tableofcontents
+\clearpage
+\section{Introducción}
+
+
+\end{document}
