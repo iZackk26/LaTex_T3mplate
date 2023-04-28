@@ -31,14 +31,67 @@
 \def\HUGE{\@setfontsize\HUGE{30}{60}}
 \setlength{\parskip}{0.1in}
 
-\newcommand{\myTitle}{Title}
+% --------> Information about the Number page and Characteristhics
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+\newcommand{\institute}{\centering Your Title of Text Here!}
+\newcommand{\authors}{\centering Your authors here plz!}
+
+% -=-=-=-=-=-=-=-=-=-=
+% Cabecera y pie de página
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+% Definir los encabezados y pie de página
+\fancyhead[LO]{\ifnum\value{page}>1 \authors \fi} % Autores a la izquierda en páginas impares
+\fancyhead[RE]{\ifnum\value{page}>1 \institute \fi} % Instituto a la derecha en páginas pares
+\fancyfoot[RO,LE]{\centering \thepage} % Número de página a la derecha en páginas pares e izquierda en páginas impares
+\fancyfootoffset[R]{0.5cm} % Ajustar margen derecho del pie de página
+
+
+
+
 
 \begin{document}
 \include{TitlePage}
 \tableofcontents
-\subsection{Test}
 \clearpage
-\section{Introducción}
+% ------------> Here the document Start, if you want to modify something related to Table of content you can do it above of this
+
+\section{Abstract}
+Here you can put your abstract information 
+
+\clearpage
+
+\section{Introduction}
+Here you can put your abstract information
+
+\clearpage
+
+\section{Justification}
+Here you can put your justification information
+
+\clearpage
+
+\subsection{Objectives}
+    \subsubsection{General Objective}
+    Here the General Objetive
+    \subsubsection{Specific Objective}
+    \begin{itemize}
+        \item{First Item}
+            Here the 1'st item 
+        \item{Second Item}
+            Here the 2'nd item
+
+\clearpage
+\subsection{Art State}
+
+Your art state here!
+
+
+
 
 
 \end{document}
