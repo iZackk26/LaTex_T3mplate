@@ -1,0 +1,34 @@
+\documentclass[10pt,twoside]{report}
+
+% Paquetes mínimos necesarios
+\usepackage[a5paper,left=20mm,right=15mm,top=15mm,bottom=15mm, headsep=2mm]{geometry}
+\usepackage{graphicx} % Para insertar imágenes
+\usepackage[spanish]{babel}
+\usepackage{datetime} % Opcional, para personalizar la fecha
+
+% Configuración del formato de la fecha (opcional)
+\newdateformat{myformat}{\THEDAY\ de \monthname[\THEMONTH] \de \THEYEAR}
+
+\usepackage[style=apa, backend=biber]{biblatex}
+\addbibresource{references.bib}
+
+\begin{document}
+
+% Incluir la portada
+\input{portrait.tex}
+
+% Iniciar una nueva página después de la portada
+\cleardoublepage
+
+\tableofcontents
+
+% Iniciar una nueva página después de la portada
+\cleardoublepage
+
+% Incluir el contenido principal
+\input{document.tex}
+
+\printbibliography
+
+\end{document}
+
